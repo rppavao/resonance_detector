@@ -17,3 +17,6 @@ This program takes the inputs of matrix.py and functions.py and calculates the T
 Here we have the pole class, which takes as inputs the mass and width of the pole (an initial guess can be obtained from the detectmaxima.py program) as well as any other necessary parameters. It has methods that can find the pole position, calculate the couplings, follow the poles while varying any of the parameters, compare the couplings with any other pole calculating a distance (for example the euclidian distance - this can be used to compare poles with different parameters that may actually be the same pole), plot the region in the complex plane around the pole.
 - **detectmaxima.py**:
 This is a specialized program that detects all the poles in a given region, plotting also the thresholds. It can detect poles in several Riemann sheets. Later versions calculate the couplings and the contribution of each channels to the resonance wave function (compositeness).
+
+This was one of the main programs I used to complete my PhD. 
+Thesis: https://inspirehep.net/literature/1827249
