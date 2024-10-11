@@ -1,4 +1,4 @@
-#Numerical study and detection of Resonances with Python
+**Numerical study and detection of Resonances with Python**
 
 Resonances are essentially particles that can decay into other particles. 
 They can be defined as poles (singularities) in a complex plane defined by the energy and the inverse of the lifetime of the particle. 
