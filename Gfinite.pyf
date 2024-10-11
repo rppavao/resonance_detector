@@ -1,0 +1,45 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module Gfinite ! in 
+    interface  ! in :Gfinite
+        subroutine gfvol(e,m1,m2,lfv,submu,gfv) ! in :Gfinite:pedro.for
+            real*8 :: e
+            real*8 :: m1
+            real*8 :: m2
+            real*8 :: lfv
+            real*8 :: submu
+            real*8 intent(out) :: gfv
+        end subroutine gfvol
+        subroutine gfvaux(e,m1,m2,lfv,qmax,gfv) ! in :Gfinite:pedro.for
+            real*8 :: e
+            real*8 :: m1
+            real*8 :: m2
+            real*8 :: lfv
+            real*8 :: qmax
+            complex*16 :: gfv
+        end subroutine gfvaux
+        subroutine drloopra(ss,alf,xmu,xm1,xm2,cres) ! in :Gfinite:pedro.for
+            complex*16 :: ss
+            real*8 :: alf
+            real*8 :: xmu
+            real*8 :: xm1
+            real*8 :: xm2
+            complex*16 :: cres
+        end subroutine drloopra
+        subroutine cloopra(s,q,m1,m2,cres) ! in :Gfinite:pedro.for
+            complex*16 :: s
+            real*8 :: q
+            real*8 :: m1
+            real*8 :: m2
+            complex*16 :: cres
+        end subroutine cloopra
+        function mult2(i) ! in :Gfinite:pedro.for
+            integer :: i
+            real*8 :: mult2
+        end function mult2
+    end interface 
+end python module Gfinite
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
